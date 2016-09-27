@@ -1,5 +1,51 @@
-this is a sentence
-this is another sentence
-return
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
 
-ayo
+	<title>Scroll Example</title>
+
+	<!-- Load CSS-->
+	<link rel="stylesheet" type="text/css" href="pizza.css">
+
+	<!-- Load jQuery -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+
+	<!-- Load ScrollTo -->
+	<script src="http://flesler-plugins.googlecode.com/files/jquery.scrollTo-1.4.2-min.js"></script>
+
+	<!-- Load LocalScroll -->
+	<script src="http://flesler-plugins.googlecode.com/files/jquery.localscroll-1.2.7-min.js"></script>
+
+	<!-- javascript that will initiate jQuery and the LocalScroll plugin -->
+	<script type="text/javascript">
+		// When the document is loaded...
+		$(document).ready(function() {
+			// Scroll the whole document
+			$('#box-links').localScroll({
+	           target:'body'
+	        });	 
+		});
+	</script>
+</head>
+<body>
+	<header>
+		<div class="box-links">
+			<ul>
+				<li><a href="box1">Link 1</a></li>
+				<li><a href="box2">Link 2</a></li>
+				<li><a href="box3">Link 3</a></li>
+				<li><a href="box4">Link 4</a></li>
+				<li><a href="box5">Link 5</a></li>
+				<li><a href="box6">Link 6</a></li>
+			</ul>
+	</header>
+
+				<div id="box1" class="box">Text</div>
+				<div id="box2" class="box">Text</div>
+				<div id="box3" class="box">Text</div>
+				<div id="box4" class="box">Text</div>
+				<div id="box5" class="box">Text</div>
+				<div id="box6" class="box">Text</div>
+</body>
+</html>
