@@ -1,94 +1,14 @@
-/** {
-    margin:0;
-    padding:0;
-}*/
-
-body {
-    background-color:black;
-    font-family:"Arial","Helvetica," sans-serif;
-    max-width:1366px;
-    max-height:768px;
-
-
-}
-
-header {
-    height:50px;
-    width:100%;
-    position:fixed;
-    top:0px;
-    left:0px;
-    padding-bottom:15px;
-    /*border:1px solid white;*/
-    background-color:#ae162b;
-    opacity:0.9;
-    z-index:1000;
-}
-
-
-    header li a {
-        font-size: 12px;
-        width:auto;
-        padding: 0px 10px;
-        float:right;
-        color:#fff;
-        background-color:white;
-        border:1px solid black;
-        text-align:center;
-        text-decoration: none;
-        margin-right: 5px;
-
-    }
-
-    header li a:visited {
-        color:black;
-        text-decoration: none;
-    }
-
-    ul {
-        text-decoration:none;
-
-    
-    }
-
-      header li {
-            display:block;
-            float:right;
-            text-decoration:none;
-            position: relative;
-
-
-        }
-
-
-
-h2 {
-    font-size:100px;
-    font-family: 'Ariel';
-    color:#484848 ;
-    float:left;
-    width:100%;
-    text-align: left;
-    padding-left:3%;
-    opacity:0.8;
-    text-shadow: 2px 5px 5px gray;
-    letter-spacing: 15px;
-}
-
 p {
-    font-family:"Helvetica";
-    font-size:14px;
-    width:auto;
-    text-align: left;
 
 }
+
 
 a {
     color:#C80000;
     text-decoration:none;
 }
 
-h3 {
+/*h3 {
     text-align:right;
     color:#FFFFFF;
     font-family:"Rock Salt";
@@ -100,9 +20,9 @@ h3 {
     opacity:0.8;
     text-shadow: 2px 5px 5px gray;
     /*letter-spacing: 5px;*/
-}
+/*}*/
 
-h4 {
+/*h4 {
     font-family:"Cinzel";
     font-size:50px;
     padding-top:15px;
@@ -111,8 +31,8 @@ h4 {
     color:#ccc;
     opacity:0.8;
     letter-spacing: 1px;
-    
-}
+
+}*/
 
 .nav {
     height:auto;
@@ -122,11 +42,14 @@ h4 {
     padding-right:10px;
     /*background-color:white;*/
     opacity:0.9;
+
+
 }
 
     .nav:hover {
         opacity:1.0;
-        cursor: pointer;
+        cursor: crosshair;
+        
     }
 
 .ding {
@@ -141,6 +64,7 @@ h4 {
     margin-top:1%;
     margin-right:25%;
     border:1px solid black;
+
 }
 
 .box {
@@ -179,8 +103,6 @@ div.img {
     width: 350px;
     float:left;
     background-color:white;
-    /*opacity:0.5;*/
-    /*border-radius: 15px 50px*/
 }
 
 div.img img {
@@ -188,14 +110,15 @@ div.img img {
     margin-right:50px;
     padding-left: 25px;
     border: 1px solid #ffffff;
-    /*border-radius: 15px 50px*/
 
 }
 
 div.img:hover {
-    /*border:1px solid #0000ff;*/
     opacity:1.0;
-    cursor: pointer;
+    cursor: crosshair;
+    /*-ms-transform: translate(50px, 100px); */
+    /*-webkit-transform: translate(50px, 100px); */
+    /*transform: translate(50px, 100px);*/
 }
 
 div.desc {
@@ -210,6 +133,7 @@ div.desc {
     font-weight: lighter;
     font-family:'Ariel';
 }
+
 
 .look {
    float:left;
@@ -243,11 +167,74 @@ div.desc {
 
 }
 
+@media screen and (max-width: 980px){  
+  
+    header li a {
+        font-size: auto;
+        width:auto;
+    }
+  
+    img {  
+        width: 25%;  
+    } 
+
+    p {
+        font-size:auto;
+    } 
+} 
+
+@media screen and (max-width: 736px)(max-height:414px){  
+    img {  
+        display: none;  
+    } 
+
+     header li a {
+        font-size: auto;
+        width:auto;
+    } 
+}
+
+
+h1 {
+    margin-left: 70px;
+}
+form li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+form ul li label{
+    float: left;
+    clear: left;
+    width: 100px;
+    text-align: right;
+    margin-right: 10px;
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    font-size:14px;
+}
+
+form ul li input, select, span {
+    float: left;
+    margin-bottom: 10px;
+}
+
+form textarea {
+    float: left;
+    width: 350px;
+    height: 150px;
+}
+
+[type="submit"] {
+    clear: left;
+    margin: 20px 0 0 230px;
+    font-size:18px
+}
+
+p {
+    margin-left: 70px;
+    font-weight: bold;
+}
+
 footer {
-    font-size:11px;
-    font-family:"Roboto Slab";
-    float:left;
-    text-align:left;
-    padding-right:10px;
-    padding-left:5px;
+
 }
