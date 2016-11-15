@@ -1,3 +1,5 @@
+
+
 body {
     background-color:white;
     font-family:"Arial","Helvetica," sans-serif;
@@ -7,7 +9,7 @@ body {
     cursor:crosshair;
     /*-webkit-text-size-adjust: 100%;*/
 
-
+   
 
 
 }
@@ -23,7 +25,7 @@ header {
     background-color:#ae162b;
     opacity:0.9;
     z-index:1000;
-
+    
 }
 
 
@@ -38,17 +40,17 @@ header {
         text-align:center;
         text-decoration: none;
         margin-right: 5px;
-
+        
 
     }
     header ul li a:hover {
-         background-color: green ;  1-3
-        color: yellow ;
-
-
+         background-color: green ;  1-3 
+        color: yellow ; 
+        
+                
     }
 
-    ul:hover {
+    ul:hover {  
         display:block;
         float:right;
         text-decoration:none;
@@ -58,9 +60,10 @@ header {
          padding: 0px ;
         background-color: none;
 
+        
 
     }
-
+       
 
 
 
@@ -68,21 +71,21 @@ h2 {
     font-size:50px;
     font-family: 'Ariel';
     color:#484848 ;
-
+    
 
 }
-    /*h2:hover{
+    h2:hover{
         -webkit-transform: rotateX(150deg); /* Safari */
-
-
-    }*/
+        transform: rotateX(150deg);
+        
+    }
 
 p {
     font-family:"Helvetica";
     font-size:14px;
     width:auto;
     text-align: left;
-
+    
 
 }
 
@@ -115,6 +118,7 @@ a {
     color:#ccc;
     opacity:0.8;
     letter-spacing: 1px;
+
 }*/
 
 .nav {
@@ -132,7 +136,7 @@ a {
     .nav:hover {
         opacity:1.0;
         cursor: crosshair;
-
+        
     }
 
 .ding {
@@ -199,7 +203,9 @@ div.img img {
 div.img:hover {
     opacity:1.0;
     cursor: crosshair;
-  
+    -ms-transform: translate(50px, 100px); 
+    -webkit-transform: translate(50px, 100px); 
+    transform: translate(50px, 100px);
 }
 
 div.desc {
@@ -248,32 +254,32 @@ div.desc {
 
 }
 
-@media screen and (max-width: 980px){
-
+@media screen and (max-width: 980px){  
+  
     header li a {
         font-size: auto;
         width:auto;
     }
-
-    img {
-        width: 25%;
-    }
+  
+    img {  
+        width: 25%;  
+    } 
 
     p {
         font-size:auto;
-    }
-}
+    } 
+} 
 
-@media screen and (max-width: 736px)(max-height:414px){
-    img {
-        display: none;
-    }
+@media screen and (max-width: 736px)(max-height:414px){  
+    img {  
+        display: none;  
+    } 
 
      header li a {
         font-size: auto;
         width:auto;
-    }
-}
+    } 
+} 
 
 
 
