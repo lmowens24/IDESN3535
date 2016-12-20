@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width">
+
+	<title>RadonAway</title>
+
+	<!-- Load CSS-->
+	<link rel="stylesheet" type="text/css" href="nav.css">
+
+
+	</script>
+</head>
+<body>
+	<header>
+		<ul id="box-links">
+			<div class="nav">
+		<h5 class="nav_handle">Menu</h5>
+		<nav class="navigation" data-navigation-handle=".nav_handle">
+		<a href="#">One</a>
+		<a href="#">Two</a>
+		<a href="#">Three</a>
+		</nav>
+
+				<ul>
+					<li><a href="#box2">About</a></li>
+					<li><a href="http://www.radonaway.com/">Main Website</a></li>
+				</ul>
+			</div>
+
+	</header>
+
+		<div id="box1" class="box"><center><img src="file:///Users/lilyowens/Desktop/logo.png"/></center>
+			<h2>About</h2>
+		<style type="text/css"><center>
+		body {
+	font-family: Helvetica, sans-serif;
+}
+
+.text_field_format {
+	background-color: #ddd ;
+	border: 1px solid #999 ;
+}
+
+.text_field_format_error {
+	background-color: #fceef6 ;
+	border: 1px solid #fb0000 ;
+}
+
+.hidden {
+	visibility: hidden ;
+}
+.visible {
+	visibility: visible ;
+}
+
+.error_message_format {
+	text-transform: uppercase;
+	font-size: .7em ;
+	font-weight: bold ;
+	color: #dd0000;
+}
+
+</style>
+<script type="text/javascript">
+
+		function check_string_length ( object, minimum_length, message_span ) {
+
+			var string_to_check_length = object.value.length ;
+
+			if ( string_to_check_length > minimum_length ) {
+				// Success!
+				console.log (object.value + " is long enough.") ;
+
+				// The first name is greater than 2 characters.
+				object.className = "text_field_format" ;
+				message_span.className = "hidden error_message_format" ;
+
+			}
+			else {
+				// Failure message.
+				console.log (object.value + " is too short.") ;
+
+				// Change the border to red and background to pink in the text field by changing the CSS class.
+				object.className = "text_field_format_error" ;
+
+				// Make the error message visible.
+				message_span.className = "visible error_message_format" ;
+
+			}
+
+
+		}
+
+
+
+function validate_form_data() {
+
+	console.log("The user has submitted the form.") ;
+
+
+	var first_name = document.getElementById('first_name') ;
+	console.log("first_name: " + first_name.value) ;
+
+	var email = document.getElementById('email') ;
+	console.log("email: " + email.value) ;
+
+
+	var first_name_value = first_name.value ;
+	var email_value = email.value ;
+
+	// span tag with error message.
+	var first_name_error_message = document.getElementById('first_name_error_message') ;
+	var email_error_message = document.getElementById('email_error_message') ;
+
+	check_string_length(first_name, 2, first_name_error_message ) ;
+
+	check_string_length(email, 5, email_error_message ) ;
+
+	/*
+	 if ( string_length() && has_a_number() ) {
+
+	 }
+	 */
+
+
+}
+</center>
+	</script>
+
+	</div>
+	<form name="registration_form" id="registration_form">
+
+		<label>First name: </label> <input class="text_field_format" type="text" id="first_name" name="first_name" value=""/> <span id="first_name_error_message" class="hidden error_message_format">The username must be greater than 2 characters.</span>
+		<br/>
+		<br/>
+		<label>Email: </label> <input class="text_field_format" type="text" id="email" name="email" value=""/> <span id="email_error_message" class="hidden error_message_format">The email must be greater than 5 characters.</span>
+		<br/>
+		<br/>
+		<input type="button" id="submit_button" name="submit_button" value="Submit form" onclick="validate_form_data();"/>
+
+	</form>
+</body>
+</html>
